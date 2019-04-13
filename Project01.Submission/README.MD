@@ -1,4 +1,4 @@
-<h1> Sample Log file record </h1>
+<h1> Sample User app Log file record </h1>
 {
   "artist": "The Rakes",
   "auth": "Logged In",
@@ -20,7 +20,7 @@
   "userId": "3"
 }
 
-<h1> Sample Song record </h1>
+<h1> Sample Record in Song Dictionary </h1>
 {
   "num_songs": 1,
   "artist_id": "ARJIE2Y1187B994AB7",
