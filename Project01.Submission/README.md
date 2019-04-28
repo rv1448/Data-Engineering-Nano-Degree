@@ -4,6 +4,7 @@
 __Sparkify__, a new startup company with a music streaming app, it wants to analyze how the music streaming app is performing with the users. It collects user activity of the songs in JSON format and song data is also JSON formt. 
 
 ### Problem Description
+
 Create a ETL data model in __POSTGRE__ that can be used to analyze user questions on how songs are performing. The Analytics team want to do analysis on the user data and perform query's to measure the app and song activity.
 
 * User Activity JSON record 
