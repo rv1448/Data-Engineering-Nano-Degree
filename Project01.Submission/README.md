@@ -15,10 +15,10 @@ Create a data model in __POSTGRE__ that can be used to user questions on how son
 ```
 * Song Details
  <ol>
-<li>artist_id, artist_name   __Artist details__ </li> <br>
-<li>artist_latitude, artist_longitude, artist_location __Location__ </li> <br>
-<li>duration, num_songs __song details__ </li> <br>
-<li>song_id, title, year  __song details__ </li> <br>
+<li>artist_id, artist_name </li>   __Artist details__ <br>
+<li>artist_latitude, artist_longitude, artist_location</li>  __Location__ <br>
+<li>duration, num_songs </li> __song details__<br>
+<li>song_id, title, year </li>  __song details__<br>
  
  
  
