@@ -15,6 +15,12 @@ Create a ETL data model in __POSTGRE__ that can be used to analyze user question
 ``` json 
 {"num_songs": 1, "artist_id": "AREVWGE1187B9B890A", "artist_latitude": -13.442, "artist_longitude": -41.9952, "artist_location": "Noci (BA)", "artist_name": "Bitter End", "song_id": "SOFCHDR12AB01866EF", "title": "Living Hell", "duration": 282.43546, "year": 0}
 ```
+### Technical Documentation
+Load data into DIM and FACT tables using the files from LOG data and song data. 
+* Load data into __Time, Artist, Users, Songs__ tables while loading generate Surrogate keys in each tables.
+* Load data into __Songplays__ fact table, insert DIM table surrogate keys into keys so we can slice data. 
+
+
 * Song Details
  <ol>
 <li>artist_id, artist_name </li>   __Artist details__ <br>
