@@ -4,7 +4,6 @@
 __Sparkify__, a new startup company with a music streaming app, it wants to analyze how the music streaming app is performing with the users. It collects user activity of the songs in JSON format and song data is also JSON formt. 
 
 ### Problem Description
-
 Create a ETL data model in __POSTGRE__ that can be used to analyze user questions on how songs are performing. The Analytics team want to do analysis on the user data and perform query's to measure the app and song activity.
 
 * User Activity JSON record 
@@ -18,19 +17,19 @@ Create a ETL data model in __POSTGRE__ that can be used to analyze user question
 ### Technical Documentation
 Load data into DIM and FACT tables using the files from LOG data and song data. 
 * Load data into __Time, Artist, Users, Songs__ tables while loading generate Surrogate keys in each tables.
-* Load data into __Songplays__ fact table, insert DIM table surrogate keys into keys so we can slice data. 
+* Load data into __Songplays__ fact table, insert DIM table surrogate keys into FACT table for analysis. 
+* Use python scripts into POSTGRES table.
 
 
-* Song Details
- <ol>
-<li>artist_id, artist_name </li>   __Artist details__ <br>
-<li>artist_latitude, artist_longitude, artist_location</li>  __Location__ <br>
-<li>duration, num_songs </li> __song details__<br>
-<li>song_id, title, year </li>  __song details__<br>
+### File Column Details
+artist_id, artist_name  __Artist details__ <br>
+artist_latitude, artist_longitude, artist_location  __Location__ <br>
+duration, num_songs  __song details__<br>
+song_id, title, year   __song details__<br>
  
-Discuss the purpose of this database in the context of the startup, Sparkify, and their analytical goals.
-State and justify your database schema design and ETL pipeline.
-[Optional] Provide example queries and results for song play analysis.
+##### Discuss the purpose of this database in the context of the startup, Sparkify, and their analytical goals.
+##### State and justify your database schema design and ETL pipeline.
+##### [Optional] Provide example queries and results for song play analysis.
  
  
  
