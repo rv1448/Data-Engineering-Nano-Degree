@@ -13,7 +13,7 @@ Create a data model in __POSTGRE__ that can be used to user questions on how son
 ``` json 
 {"num_songs": 1, "artist_id": "AREVWGE1187B9B890A", "artist_latitude": -13.442, "artist_longitude": -41.9952, "artist_location": "Noci (BA)", "artist_name": "Bitter End", "song_id": "SOFCHDR12AB01866EF", "title": "Living Hell", "duration": 282.43546, "year": 0}
 ```
-'artist_id','artist_name'  > Artist details
+'artist_id','artist_name'  > Artist details <br>
 'artist_latitude', 'artist_longitude'
 'artist_location',
 'duration', 'num_songs', 
