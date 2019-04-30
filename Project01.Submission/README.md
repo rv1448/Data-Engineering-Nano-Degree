@@ -20,7 +20,7 @@ Load data into DIM and FACT tables using the files from LOG data and song data.
 * Load data into __Songplays__ fact table, insert DIM table surrogate keys into FACT table for analysis. 
 * Use python scripts into POSTGRES table.
 
-![alt text](/SPAKIFYDATAANALYSIS.png)
+![alt text](SPAKIFYDATAANALYSIS.png)
 ### File Column Details
 artist_id, artist_name  __Artist details__ <br>
 artist_latitude, artist_longitude, artist_location  __Location__ <br>
