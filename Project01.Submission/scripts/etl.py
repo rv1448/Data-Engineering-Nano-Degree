@@ -10,11 +10,11 @@ def process_song_file(cur, filepath):
     df = pd.read_json(filepath,lines=True)
 
     # insert song record
-    song_data = list(df[['song_id','title','artist_id', 'year','duration']].values[0])
+    song_data = list(df.loc[:,['song_id','title','artist_id', 'year','duration']].values[0])
     cur.execute(song_table_insert, song_data)
     
     # insert artist record
-    artist_data =  list(df[['artist_id','artist_name','artist_location','artist_latitude','artist_longitude']].values[0])
+    artist_data = list(df.loc[:,['artist_id','artist_name','artist_location','artist_latitude','artist_longitude']].values[0])
     cur.execute(artist_table_insert, artist_data)
 
 
@@ -39,7 +39,7 @@ def process_log_file(cur, filepath):
                        ,'month':pd.to_datetime(df.ts,unit='ms').dt.month
                        ,'year':pd.to_datetime(df.ts,unit='ms').dt.year
                         ,'weekday':pd.to_datetime(df.ts,unit='ms').dt.weekday
-                       })
+                       }) 
 
     for i, row in time_df.iterrows():
         cur.execute(time_table_insert, list(row))
