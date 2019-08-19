@@ -1,5 +1,5 @@
 <h1> Udacity Data Engineering </h1>
-[Incremental load spark script](Class01.Project02.Submission)
+[Incremental load spark script](/Class01.Project02.Submission)
 <h2>Project01: Data Modelling in Postgresql and Cassandra</h2> 
 <h2>Project02: Cloud Data Warehouses </h2>
 <h2>Project03: Data Lakes with Spark </h2>
