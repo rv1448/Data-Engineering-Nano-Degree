@@ -1,6 +1,6 @@
 ## introduction
 
-	- Test the compiler
+	- 
 
 ## Dictionary
  	- new value = dict[key] = value
@@ -30,6 +30,39 @@
 	- check subset - setl.issubset(set2)
 	- union set - set1 | set2
 	- union set - set1.union(set2)
+	- intersection set - set1 & set2
+	- intersection set - set1.intersection(set2)
+	- difference set - set1 - set2 
+	- difference set - set1.difference(set2)
+
+## Numpy
+``` import numpy as np
+```
+* ndarrays
+* pandas 
+	- one dimensional - Series 
+	- two dimension - Pandas 
+```
+np.array([1,2,3,4,5,6,7])
+np.array([[1,2,3],[4,5,6]])
+```
+
+
+## Dynamic Visualization
+* FuncAnimation
+* scriptname: `scriptname`
+
+## visualization 
+``` import seaborn as sns
+    import matplotlib.pyplot as plt 
+```
+	- set white grid stylefor the plot - sns.set_style('whitegrid')
+	- 
+## Special notes 
+```import sys
+```
+	- find the space seperated values - sys.argv[n]
+	- 
 
 ```python 
 #Dictionary example
