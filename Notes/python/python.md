@@ -39,9 +39,28 @@
 ``` import numpy as np
 ```
 * ndarrays
+[numpybasics](https://docs.scipy.org/doc/numpy/user/basics.types.html)
+[magiccommands](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+	- datatype of the array - array.dtype
+	- number of dimension - array.ndim
+	- shape of the array - array.shape
+	- rows vs  columns - array.shape
+	- size of each element - array.itemsize
+	- size of the array rows * col - array.size
+	- range in array - array.arange(5) or arange(5,10)
+	- floating point range - np.linspace(0.0,1,num=5)
+	- reshaping a array - np.arange(1,21).reshape(4,5)
+``` python
+#create an array of 20 even numbers from 2 through 40 and reshape into (4,5) array
+np.arange(2,41,2).reshape(4,5)
+
+#list vs array
+
+```
 * pandas 
 	- one dimensional - Series 
 	- two dimension - Pandas 
+
 ```
 np.array([1,2,3,4,5,6,7])
 np.array([[1,2,3],[4,5,6]])
