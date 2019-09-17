@@ -88,9 +88,16 @@ grades[:,1] ==> all rows and 1 column
 * pandas 
 	*one dimensional - Series* 
 	*two dimension - Pandas*
+** series
 [series](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html)
-
-
+	- count of the series - series.count()
+	- mean of the series - series.mean()
+	- all the descriptive stats - series.describe()
+```python
+import pandas 
+grades = pd.Series([70,89,90])
+grades = pd.Series([70,89,90],index=['1','2','3'])
+```
 ## Dynamic Visualization
 * FuncAnimation
 * scriptname: `scriptname`
