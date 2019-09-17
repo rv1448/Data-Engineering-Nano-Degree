@@ -50,21 +50,45 @@
 	- range in array - array.arange(5) or arange(5,10)
 	- floating point range - np.linspace(0.0,1,num=5)
 	- reshaping a array - np.arange(1,21).reshape(4,5)
-``` python
-#create an array of 20 even numbers from 2 through 40 and reshape into (4,5) array
-np.arange(2,41,2).reshape(4,5)
-
-#list vs array
-
+	- random array in numpy - np.random.randint(1,7,600000)
+	- function on arrays - np.array().sum(), mean(),min()
+	- mean across columns - np.array().mean(axis=0)
+	- square root of the array - np.sqrt()
+	- View to create a copy - array.view
+	- physical copy(shallow) of the data - array.copy()
+	- physical copy(deep) of the data - array.deepcopy()
+	-
+* Numpy array generation 
+```python
+## Generate randome ints between 10 and 60 and total of 5
+np.random.randint(10,60,5)
+## Generate floats between 1.1 and 5.5 
+np.linspace(1.1,5.5,5)
+## Generate range of numbers 
+np.arange(10,40,2)
 ```
+
+* Indexing and slicing in numpy 
+```
+grades =[[95 96 93]
+ 	[93 90 90]
+ 	[90 95 95]
+ 	[98 96 92]]
+grades[0,1] ==> r:0,c:1
+grades[1]   ==> r:1
+grades[0:2] ==> r:0,1
+grades[:,1] ==> all rows and 1 column
+# continuous no square brackets
+```
+* re-sizing array
+	- to make permanent changes - array.resize()
+	- to flatten(deep copy) the array to one dimension - array.flatten()/ravel()
+	- tranpose an array - array.T
+
 * pandas 
-	- one dimensional - Series 
-	- two dimension - Pandas 
-
-```
-np.array([1,2,3,4,5,6,7])
-np.array([[1,2,3],[4,5,6]])
-```
+	*one dimensional - Series* 
+	*two dimension - Pandas*
+[series](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html)
 
 
 ## Dynamic Visualization
@@ -81,7 +105,7 @@ np.array([[1,2,3],[4,5,6]])
 ```import sys
 ```
 	- find the space seperated values - sys.argv[n]
-	- 
+	- find the function definition in ipython - ??  
 
 ```python 
 #Dictionary example
