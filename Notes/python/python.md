@@ -88,7 +88,8 @@ grades[:,1] ==> all rows and 1 column
 * pandas 
 	*one dimensional - Series* 
 	*two dimension - Pandas*
-** series
+series
+------
 [series](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html)
 	- count of the series - series.count()
 	- mean of the series - series.mean()
@@ -98,6 +99,32 @@ import pandas
 grades = pd.Series([70,89,90])
 grades = pd.Series([70,89,90],index=['1','2','3'])
 ```
+
+** dictionary
+``` 
+grades_dict = {'willy':[90,87,65],'roe':[98,76,62]}
+data = pd.DataFrame(grades_dict)
+print(data)
+```
+	- select values for named indices of the row - DataFrame.loc['nameofrow'] 
+	- iloc and loc brings the rows 
+	- iloc uses number/integer rows and loc used named indexes
+	- Change a value at a index - DataFrame.iat[2,0]
+	- Change a value at a named index - DataFrame.at['idx','eva']
+	- Set options to the DataFrame - pd.set_option('precision',2)
+	- Sort dataFrame using index - DataFrame.sort_index(ascending=False)
+	- Sort dataFrame using values - DataFrame.sort_value(by='test1',ascending=False) 
+```python
+#inplace Sort
+grades.sort_values(by='test1',ascending=False,inplace=True)
+#self check: 
+Convert dictionary to DataFrame 
+Select only column name mon and tues
+Using row index select low tempuratues of each day 
+set floating point precision to 2, Then caliculate the average temp of the day 
+Calculate average High and low
+```
+
 ## Dynamic Visualization
 * FuncAnimation
 * scriptname: `scriptname`
@@ -135,4 +162,49 @@ print(f'{key:<4}{count}')
 colours = {'red','orange','yellow','green','red'}
 ```
 
+* Strings
+[String formating](https://docs.python.org/3.4/library/string.html#string-formatting)
+
+```python
+#String formatting 
+print(f'{17.98:.2f}')
+f'{10:d}'
+f'{65:c}{97:c}'
+#if no format is specified it is treated as string
+f'{37:10d}'
+f'{12334556:,d}'
+
+#Old code 
+':.2f'.format(17.489)
+'{} {}'.format('Amanda','Cyan')
+'{0},{0},{1}'.format('happy','world!')
+```
+	- count number of occurances a word occurs in string - 'string'.count()/'string'.count('',int)
+	- get the index of a character in a string - 'string'.index()
+	- get the right index - 'string'.rindex('at')
+	- check if string starts with character - 'string'.startswith('')
+	- replace a character in string - 'string'.replace('\t',',')
+	- split the letters by a character - 'string'.split(', ') ==> return list
+	- join using a char for every element in the Sequence - ', '.join([seq])
+[String functions](https://docs.python.org/3/library/stdtypes.html)
+
+Regex
+-----
+
+`REGEX: [] {} () \ * + ^ $ ? . |`
+#### * - Zero or more occurances of a character
+#### + - atleast one 
+#### ^ is the start of the string $ is the end of the string 
+#### + and * are Greedy quantifiers 
+	- replace a character in a string - re.sub()
+	- remove Zero or more space re.split(r',\s*',',','1,    5,6, 6,   9,   0')
+	- Find all that matches to the pattern - re.findall(pattern,String)
+	- Iterate through all the matches - re.iter()
+
+* Files
+```python
+with open('accounts.txt',mode='w') as accounts:
+with open('account.txt',mode='r') as accounts: 
+```
+[DataSets](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
 
