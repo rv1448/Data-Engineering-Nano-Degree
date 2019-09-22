@@ -82,6 +82,40 @@ iam.attach_role_policy(Rolename=DWH_IAM_ROLE_NAME,
 			PolicyArn:'AmazonS3ReadOnly'
 			)['ResponseMetadata']['HTTPStatusCode']
 ```
+
+`Redshift Table Design`
+- Distribution style 
+	- EVEN
+		- Round Robin will distribute even rows 
+		- Each SLice(Partition) will get even rows 
+		- Data has to be moved aroud a lot in JOIN 
+		- Eg: DIm table distributed and will lead to shuffling
+		- Large tables
+	- ALL
+		- Small table will be copied to each slice 
+		- This is when table is less number of rows
+	- AUTO
+		- Redshift takes care of the distribution style
+	- KEY
+		- Rows having similar values are placed in same slice
+		- usually sk columns are candidates 
+		- same FACT sk has to distributed in same way 
+		- Skewed dimensions 
+		- COLOCATES same rows into the same slice 
+- Sorting key 
+	- upon loading rows are sorted before distribution to slices 
+	- Minimizes the querytime since each node already has contigous range of rows based on the sorting key 
+	- Useful for columns that are used frquently in sorting like the date dimension and its corresponding foreign key in the fact table 
+	- A column can be dist key and Sort key 
+``` sql 
+## Load partitioned data into cluster 
+copy table from s3://
+credentials 'aws_iam_role' gzip delimiter ';' compupdate off region 'us-west-2'
+```
+` Automate ETL loading into redshift`
+
+
+
 `Special Notes`
 * ETL from Other Sources 
 	- SSH into EC2 machines from REDSHIFT server	
