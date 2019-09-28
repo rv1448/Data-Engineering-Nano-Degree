@@ -1,5 +1,5 @@
 ## Data Engineering Nano Degree
-5 Month course building and deploying ETL/Serverless data pipelines, and deploying infrastructure in AWS Cloud 
+__5 Month course building and deploying ETL/Serverless data pipelines, and deploying infrastructure in AWS Cloud__   
 [About the program](https://www.udacity.com/course/data-engineer-nanodegree--nd027)
 ## Project01: Data Modelling in Postgresql and Cassandra
 * __Submission__
