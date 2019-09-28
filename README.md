@@ -1,5 +1,5 @@
 ## Data Engineering Nano Degree
-5 Month course work for __Building and deploying ETL/Serverless data pipelines populating redshift for analytics, and also deploying infrastructure as Code in AWS Cloud__.  
+_5 Month course work for __Building and deploying ETL/Serverless data pipelines populating redshift for analytics, and also deploying infrastructure as Code in AWS Cloud_  
 [More About the program](https://www.udacity.com/course/data-engineer-nanodegree--nd027)
 ## Data Modelling in Postgresql and Cassandra
 * __Submissions__
