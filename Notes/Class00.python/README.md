@@ -4,7 +4,7 @@
 * Text 
 It's very easy to make some words **bold** or __bold__ and other words *italic* with markdown. you can even post links 
 [Link to google!](www.google.com)
-[link to submission](/tree/master/Project01.Submission)
+[link to submission](https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project01.Submission)
 
 * Lists
 Sometimes you want numbered lists: 
