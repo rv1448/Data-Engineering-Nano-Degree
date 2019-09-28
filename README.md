@@ -3,9 +3,8 @@ __5 Month course work for building and deploying ETL/Serverless data pipelines p
 [More About the program](https://www.udacity.com/course/data-engineer-nanodegree--nd027)
 ## Data Modelling in Postgresql and Cassandra
 * __Submissions__
-  - <p><a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project01.Submission">Project01: Populating PostGre Db with Sparkify User logs for analytics</p>
-  - <p><a href="http://foo.bar.baz">http://foo.bar.baz</a></p>
-  - 
+  - Project 1a. <p><a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project01.Submission">Project01: Populating PostGre Db with Sparkify User logs for analytics</p>
+
 ## Project02: Cloud Data Warehouses
 ## Project03: Data Lakes with Spark
 ## Project04: Data Pipelines with AirFlow
