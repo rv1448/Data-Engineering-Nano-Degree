@@ -1,3 +1,48 @@
+DataWrangling with Spark
+------------------------
+`Functional Programming`
+	- Spark is written in scala 
+	- Functional programming perfect for distributed systems 
+	- comes from functions you use in algebra class 
+	- functions only rely on the input 
+	- in python with  a function you can still access global variables 
+	- __pyspark api__ is written using functional programming in mind 
+	- __spark__ is written in scala so __pyspark api__ first transilates your code to scala 
+	- the way spark handles functions that don't have to rely on external variables is by having the function run on each machine and after each machine finishes 
+	- they will combine results together 
+
+`Pure functions in bread factory`
+	- if you write a function that preserves input and avoid side effects its called functional programming
+
+
+
+`Spark api details`
+	- pyspark - can access low level rdd using SparkContext 
+	- SparkContext is the main entry, connects the cluster with main application 
+	- SparkContext is used to create objects of lower abstractions 
+	- to create context we need to SparkConf() object to specify specifices of the application
+	```
+	from pyspark import SparkContext, SparkConf
+	configure = SparkConf().setAppname('name').setMaster('IP address')
+	sc = SparkContext(conf=configure)
+	```
+	- SparkSession - To read from Data frame, SparkContext spark sql equvalent 
+	``` 
+	import pyspark
+	from pyspark import SparkConf
+	from pyspark.sql import SparkSession
+	spark = SparkSession.builder.appName('name').config('config option','config value').getOrCreate()
+	spark.SparkContext.getConf().getAll()
+	```
+`Imperative programming vs Declarative Programming`
+	- imperative programming - Spark DataFrame & Python
+	- Declarative programming - sql 
+	- Imperative programming - has to declare in details how and what operation need to performed
+	- Declarative programming is an abstraction on top of imperative programming
+
+
+
+
 
 ` Spark Scripts `
 

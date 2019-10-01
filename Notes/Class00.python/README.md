@@ -1,6 +1,6 @@
 `Mastering Markdown`
 [Markdown help](https://guides.github.com/features/mastering-markdown/)
-
+[Complete ref](https://github.github.com/gfm/#example-510)
 * Text 
 It's very easy to make some words **bold** or __bold__ and other words *italic* with markdown. you can even post links 
 [Link to google!](www.google.com)
