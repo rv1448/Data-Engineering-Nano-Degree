@@ -45,6 +45,12 @@ DataWrangling with Spark
 
 Debugging and Optimization
 --------------------------
+` _corrupt_record `
+	- when you parse a corrupt file it will have a new field - __ _corrupt_record_ __
+	``` python
+	df.where(df["_corrup_record"].isNotNull()).collect()
+	```
+
 
 ` Spark Scripts `
 
@@ -101,6 +107,7 @@ correct_ts = df.where(df['co1'].isNull()).withColumn("ts_digit",correct_ts(logs3
 ```
 
 `Spark WebUI`
+[Spark UI Metrics](https://spark.apache.org/docs/latest/monitoring.html)
 	- job - as many actions/collect or writing data into DB  called in the code 
 	- Task - smallest 
 		- Smallest unit in stage 
@@ -110,14 +117,20 @@ correct_ts = df.where(df['co1'].isNull()).withColumn("ts_digit",correct_ts(logs3
 		- Units of work depend one another 
 		- cant be further parallelized 
 		- Transform and join : so Transform, Join are seperate stages
-* Ports used to communicates
-* Protocals
+* Ports used to communicate
+* Protocals - Different Ports because different protocals 
 	- SSH -> 22 
 	- HTTP/HTML -> 80
 	- Spark Master communicates with workers on port 7077
 	- Jupyter notebook -> 8888
 	- Active Spark jobs -> 4040
 	- Web UI -> 8080
+* logging 
+[Configuring Logging](https://spark.apache.org/docs/latest/configuration.html)
+	``` python
+	spark.SparkContext.setLogLevel("ERROR")
+	```
+
 `Code Optimization`
 [Spark Application tuning](https://spark.apache.org/docs/latest/tuning.html)
 [Spark_sql_tuning](https://spark.apache.org/docs/latest/sql-performance-tuning.html)
