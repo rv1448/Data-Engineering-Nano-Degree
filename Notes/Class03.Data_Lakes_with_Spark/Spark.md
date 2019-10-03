@@ -39,10 +39,12 @@ DataWrangling with Spark
 	- Declarative programming - sql 
 	- Imperative programming - has to declare in details how and what operation need to performed
 	- Declarative programming is an abstraction on top of imperative programming
+` Spark SQL `
+[Spark SQL built in functions](https://spark.apache.org/docs/latest/api/sql/index.html)
+[Spark SQL guide](https://spark.apache.org/docs/latest/sql-getting-started.html)
 
-
-
-
+Debugging and Optimization
+--------------------------
 
 ` Spark Scripts `
 
