@@ -1,6 +1,3 @@
-` umbers everyone should know`
-
-
 
 
 `Why Data Lake ??`
@@ -31,4 +28,5 @@ df =spark.read.csv(path, schema=paymentSchema,sep=";",mode="DROPMALFORMED")
 ` Notes `
 ` Follow Up`
 * Difference between select and selectExpr in Spark DataFrame
-* 
+* types in spark -  Struct, Maps, Array
+* pd.set_option('max_colwidth',200)
