@@ -13,7 +13,7 @@ _5 Month course work for_ __Building and deploying ETL/Serverless data pipelines
   
 ## Project03: Data Lakes with Spark
 * __Submission__
-  - __Project 3a__:  
+  - __3a__:  
   
 ## Project04: Data Pipelines with AirFlow
 * __Submission__
