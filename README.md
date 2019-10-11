@@ -17,6 +17,8 @@ _5 Month course work for_ __Building and deploying ETL/Serverless data pipelines
   
 ## Project04: Data Pipelines with AirFlow
 * __Submission__
-  - __Project 4a__: 
+  - __4a__: 
   
 ## Project05: Capstone Project
+* __Submission__
+  - __4a__: 
