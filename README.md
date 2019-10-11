@@ -5,7 +5,7 @@ _5 Month course work for_ __Building and deploying ETL/Serverless data pipelines
 ## Project01: Data Modelling
 * __Submissions__
   - __Project 1a__: <a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project01.Submission"><em> Populating PostGre Db with Sparkify User logs for analytics</em></a>
-  - __Project 1b__:<a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project02.Submission"><em>Populating Cassandra with Sparkify User logs</em></a>
+  - __Project 1b__:<a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project02.Submission"><em> Populating Cassandra with Sparkify User logs</em></a>
   
 ## Project02: Cloud Data Warehouses
 * __Submission__
