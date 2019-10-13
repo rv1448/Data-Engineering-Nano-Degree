@@ -83,7 +83,7 @@ def process_song_data(spark, input_data, output_data):
     artists_table = df.selectExpr(*dim_artist_columns).dropDuplicates()
     
     # write artists table to parquet files
-    artists_table.write.parquet(output+'dimartist')
+    artists_table.write.mode('overwrite').partitionBy("year", "artist_id").parquet(output+'dimartist')
 
 
 def process_log_data(spark, input_data, output_data):
@@ -148,7 +148,7 @@ def process_log_data(spark, input_data, output_data):
 
     
     # write time table to parquet files partitioned by year and month
-    time_table.write.parquet(output+'dimtime')
+    time_table.write.mode('overwrite').partitionBy("year", "month")parquet(output+'dimtime')
 
     
     # read in song data to use for songplays table
@@ -159,8 +159,7 @@ def process_log_data(spark, input_data, output_data):
 .join(dim_song,df_log.song  == song_df.title)\
 .selectExpr("cast(ts/1000 as timestamp) as time",'monotonically_increasing_id() as songplay_id','userId as user_id','level','song_id','artist_id','sessionId as session_id','location','userAgent as user_agent')  
     # write songplays table to parquet files partitioned by year and month
-    songplays_table.write.parquet(output+'songplay_table')
-
+    songplays_table.write.mode('overwrite').partitionBy("year", "month").parquet(output+'songplay_table') 
 
 def main():
     spark = create_spark_session()

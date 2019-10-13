@@ -99,7 +99,7 @@ from pyspark.context import SparkContext
 spark.sparkContext.setLogLevel("ERROR")
 
 spark=SparkSession.builder.cofig('spark.ui.port',3000).getOrCreate()
-## accumilators 
+__accumilators__
 incorrect_value = SparkContext.accumlator(0,0)
 incorrect_value.value 
 from pyspark.sql.functions import udf 

@@ -77,3 +77,11 @@ __time__  <br>
        -  month<br>
        -  year<br>
        -  weekday<br>
+       
+__Project structure__
+
+run `et`
+
+/data - A folder that cointains two zip files, helpful for data exploration
+etl.py - The ETL engine done with Spark, data normalization and parquet file writing.
+dl.cfg - Configuration file that contains info about AWS credentials       
