@@ -1,5 +1,5 @@
 # Data Engineering Nano Degree
-_5 Month course work for_ __Building and deploying ETL/Serverless data pipelines and populating redshift for analytics in AWS Cloud__.  
+_5 Month Course Work for_ __Building and deploying ETL/Serverless data pipelines and populating redshift for analytics in AWS Cloud__.  
 [More About the program](https://www.udacity.com/course/data-engineer-nanodegree--nd027)
 
 ## Project01: Data Modelling
@@ -13,10 +13,12 @@ _5 Month course work for_ __Building and deploying ETL/Serverless data pipelines
   
 ## Project03: Data Lakes with Spark
 * __Submission__
-  - __Project 3a__:  
+  - __3a__: <a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project04.Submission"><em> Data Lake ELT using Spark</em></a>  
   
 ## Project04: Data Pipelines with AirFlow
 * __Submission__
-  - __Project 4a__: 
+  - __4a__: 
   
 ## Project05: Capstone Project
+* __Submission__
+  - __5a__: 
