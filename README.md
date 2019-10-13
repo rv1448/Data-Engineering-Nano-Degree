@@ -13,12 +13,13 @@ _5 Month Course Work for_ __Building and deploying ETL/Serverless data pipelines
   
 ## Project03: Data Lakes with Spark
 * __Submission__
-  - __3a__: <a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project04.Submission"><em> Data Lake ELT using Spark</em></a>  
+  - __3a__: <a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project04.Submission"><em> Data Lake ETL using Spark</em></a>  
   
 ## Project04: Data Pipelines with AirFlow
 * __Submission__
-  - __4a__: 
+  - __4a__:<a href="https://github.com/rv1448/Data-Engineering-Nano-Degree/tree/master/Project05.Submission/airflow"><em> Data Pipelines and Data Quality using Airflow</em></a>  
+  
   
 ## Project05: Capstone Project
 * __Submission__
-  - __5a__: 
+  - __5a__: <a href="https://github.com/rv1448/NYCParkingTicketsDataset"><em>Final project on New York City Parking Violations</em></a>  
