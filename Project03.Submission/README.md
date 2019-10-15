@@ -6,7 +6,7 @@ Music Streaming startup __Sparkify__, has grown their user base and song databas
 #### Problem Statement 
 To analyze and get insights on user activityt and app performace, Build and Deploy AWS redshift Data warehouse to extract and transform S3 logs and song metadata to populate Dim and FACT tables.
 
-[ETL flow diagram](./Cloud_DWH.png)
+![ETL flow diagram](./Cloud_DWH.png)
 
 #### Technical Details
 * User Activity Sample JSON record
