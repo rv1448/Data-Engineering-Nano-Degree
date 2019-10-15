@@ -1,4 +1,4 @@
-## PROJECT: Data Warehose 
+## PROJECT:Redshift  Cloud Data Warehouse
 
 #### Introduction
 Music Streaming startup __Sparkify__, has grown their user base and song database and want to move and data onto cloud. Data resides in S3, in a directory of JSON logs on user activity, as well as directory with JSON metadata on the songs in the app. 
