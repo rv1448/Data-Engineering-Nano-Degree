@@ -29,3 +29,46 @@ Private Data Center
 Subnets 
 IP address 
 Access control 
+
+[Overview](https://paiml.github.io/awsbigdata/topics/security)
+__AWS security best practices__
+
+AWS storage:
+	Object Storage
+	Scale and flexibilty and no OS
+	File storage
+	Block storage - DB's
+
+AWS block storage:
+	- EC2 can have two types of block storages
+	- EBS and Instance store
+	- Instance volumes temp
+	- Bound to single to EC2 instance
+	- They are not persistent
+	- No encrytion and backup
+
+Storage Options: 
+	- S3, S3 glasier
+	- EFS
+	- EBS
+EC2 volumes:
+	- Root volumes - EBS has snapshots and everything
+	- Ephemaral volume - Temporary
+	- lsblk - to list the boot volmes
+
+Mounting the filesystems:
+	- Boot volumes can be mounted to /dev/xvda
+
+** VPC
+
+	VPC - virtual private cloud
+	subnets - 
+	Route tables - one per a VPC
+	SG - Permit and deny
+	Network ACL - Deal with IP addresses
+	NAT gateway - Netweork address translation
+	
+
+
+* Special Question
+	Seperate accounts
